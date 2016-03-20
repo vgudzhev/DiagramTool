@@ -3,6 +3,7 @@
 DiagramTool is a weekend project that includes the following technology stack:
 * Reactjs
 * JSX
+* ES2015
 * React-router
 * Redux
 * jQuery
