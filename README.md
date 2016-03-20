@@ -1,6 +1,6 @@
 # Diagram tool - Readme
 
-DiagramTool is a weekend project that includes the following technology stach:
+DiagramTool is a weekend project that includes the following technology stack:
 * Reactjs
 * JSX
 * React-router
