@@ -1,0 +1,14 @@
+# Diagram tool - Readme
+
+DiagramTool is a weekend project that includes the following technology stach:
+* Reactjs
+* JSX
+* React-router
+* Redux
+* jQuery
+* JointJS
+
+## Getting started
+* npm install
+* npm install -g webpack-dev-server
+* webpack-dev-server --hot --inline
