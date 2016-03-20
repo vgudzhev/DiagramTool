@@ -1,10 +1,14 @@
 [
     {
         "id": 1,
-        "componentName": "Base digagram"
+        "componentName": "Base"
     },
     {
         "id": 2,
-        "componentName": "Arrow"
+        "componentName": "Red"
+    },
+    {
+        "id": 3,
+        "componentName": "Green"
     }
 ]

@@ -1,5 +1,5 @@
-function addNode(state = { newNodes : [] }, action) {
+function addComponent(state = { newNodes : [] }, action) {
     return Object.assign({}, state, {newNodes : [action.nodeName]});
 }
 
-export default addNode
+export default addComponent

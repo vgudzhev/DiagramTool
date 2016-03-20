@@ -1,6 +1,6 @@
-export function addNode(text) {
+export function addComponent(text) {
     return {
-        type : "ADD_NODE",
+        type : "ADD_COMPONENT",
         nodeName : text
     }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { connect } from 'react-redux'
 
-import {addNote} from 'actions/index'
+import {addComponent} from 'actions/index'
 
 class MenuItem extends React.Component{
 
@@ -12,7 +12,7 @@ class MenuItem extends React.Component{
 
     render() {
         return (
-            <a onClick={this.props.generateEvent}>{this.props.label}</a>
+            <a href="#" onClick={this.props.generateEvent}>{this.props.label}</a>
         );
     }
 
@@ -22,12 +22,10 @@ function mapStateToProps(state) {
     return state;
 }
 
-
 function mapDispatchToProps(dispatch, props) {
-    console.log("Mapping events!");
     return {
         generateEvent : function() {
-            dispatch(addNote(props.label));
+            dispatch(addComponent(props.label));
         }
     }
 }

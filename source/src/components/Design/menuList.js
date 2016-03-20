@@ -8,7 +8,7 @@ class MenuList extends React.Component{
         var menuItems = this.props.data.map(function(menuItem) {
             return (
                 <li role="presentation" key={menuItem.id}>
-                    <MenuItem label={menuItem.componentName} source={menuItem.source} />
+                    <MenuItem label={menuItem.componentName} />
                 </li>
             );
         });
