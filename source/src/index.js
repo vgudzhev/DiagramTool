@@ -1,28 +1,19 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route, browserHistory  } from 'react-router';
+import { Router, Route, Link, browserHistory  } from 'react-router'
+import { Provider } from 'react-redux'
 
-import Dashboard from 'dashboard';
-import DynamicContainer from 'dynamicContainer';
-import Footer from 'footer';
+import configureStore from 'store/configureStore';
+import App from 'containers/app';
+import Design from 'components/Design/index';
 
-class App extends React.Component {
-    render() {
-        return (
-            <div className='container-narrow'>
-                <Dashboard />
-                <DynamicContainer />
-                <Footer />
-            </div>
-        );
-    }
-}
-
+const store = configureStore();
 render((
-    <Router history={browserHistory}>
-        <Route path="/" component={App} />
-    </Router>
-
+    <Provider store={store}>
+        <Router history={browserHistory}>
+            <Route path="/" component={App} />
+            <Route path="/home" component={App} />
+            <Route path="/design" component={Design} />
+        </Router>
+    </Provider>
 ), document.querySelector('#container'));
-
-export default App;
